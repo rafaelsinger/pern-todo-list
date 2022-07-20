@@ -1,15 +1,18 @@
 import React, { Fragment } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Button from 'react-bootstrap/Button'
-import Card from 'react-bootstrap/Card'
+
+import InputTodo from './components/InputTodo';
+import ListTodos from './components/ListTodos';
 
 function App() {
   return (
-    <div>
-      <Fragment>hello</Fragment>
-      <Button>yes</Button>
-    </div>
+    <Fragment>
+      <div className='container'>
+        <InputTodo />
+        <ListTodos />
+      </div>
+    </Fragment>
   );
 }
 
